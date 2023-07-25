@@ -1,0 +1,90 @@
+{
+  "id": "0107edc0-d507-4366-bd1a-7c51ac1ef5f1",
+  "version": "2.0",
+  "name": "IBM BANKING_LOGIN",
+  "url": "http://demo.testfire.net",
+  "tests": [{
+    "id": "6146e7fc-8918-411e-870f-27ec2e6eb736",
+    "name": "IBM BANKING_LOGIN",
+    "commands": [{
+      "id": "729022d3-0a22-47d7-97a5-104ea90a1ef0",
+      "comment": "",
+      "command": "open",
+      "target": "/login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2337e77-f718-42cc-a030-07ba49e3d574",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1040x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dc4f8ae-a607-49a4-950f-9dd516bc295b",
+      "comment": "",
+      "command": "type",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=uid", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/div/form/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "jsmith"
+    }, {
+      "id": "39a24743-fbbd-403f-b419-dfa8fe822372",
+      "comment": "",
+      "command": "click",
+      "target": "id=passw",
+      "targets": [
+        ["id=passw", "id"],
+        ["name=passw", "name"],
+        ["css=#passw", "css:finder"],
+        ["xpath=//input[@id='passw']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "031d8fa4-7d76-4c14-be2c-af2d9a1a28c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=passw",
+      "targets": [
+        ["id=passw", "id"],
+        ["name=passw", "name"],
+        ["css=#passw", "css:finder"],
+        ["xpath=//input[@id='passw']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Demo1234"
+    }, {
+      "id": "42e1a02a-4397-4e8f-bdca-823de571fb7f",
+      "comment": "",
+      "command": "click",
+      "target": "name=btnSubmit",
+      "targets": [
+        ["name=btnSubmit", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='btnSubmit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "83598473-6337-4fb7-b9e1-78106e333833",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6146e7fc-8918-411e-870f-27ec2e6eb736"]
+  }],
+  "urls": ["http://demo.testfire.net/"],
+  "plugins": []
+}

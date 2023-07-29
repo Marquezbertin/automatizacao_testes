@@ -1,0 +1,117 @@
+{
+  "id": "6880ad95-1d6f-492f-af77-029e64ca19ce",
+  "version": "2.0",
+  "name": "detalhes_conta",
+  "url": "http://demo.testfire.net",
+  "tests": [{
+    "id": "9c7c78d0-6afd-4f71-a356-60289162b1b8",
+    "name": "detalhes_conta",
+    "commands": [{
+      "id": "48cc4249-832f-41d9-a87b-af1a1d619759",
+      "comment": "",
+      "command": "open",
+      "target": "/bank/main.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d71a5c7-d5c8-49b6-a2f3-2ba55df785cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1040x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "862ad6b4-4152-4b39-a9ca-87332c31b6a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnGetAccount",
+      "targets": [
+        ["id=btnGetAccount", "id"],
+        ["css=#btnGetAccount", "css:finder"],
+        ["xpath=//input[@id='btnGetAccount']", "xpath:attributes"],
+        ["xpath=//td[2]/div/form/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b262be8-b09c-45dd-a4f7-1d2915ab0f42",
+      "comment": "",
+      "command": "click",
+      "target": "id=listAccounts",
+      "targets": [
+        ["id=listAccounts", "id"],
+        ["name=listAccounts", "name"],
+        ["css=#listAccounts", "css:finder"],
+        ["xpath=//select[@id='listAccounts']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'800002 Savings\n800003 Checking\n4539082039396288 Credit Card')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36b8cb83-6b85-4e1e-b52d-02a4894e20b0",
+      "comment": "",
+      "command": "select",
+      "target": "id=listAccounts",
+      "targets": [],
+      "value": "label=800003 Checking"
+    }, {
+      "id": "93cdb393-140d-4ace-9fc1-517f6d8ba0de",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnGetAccount",
+      "targets": [
+        ["id=btnGetAccount", "id"],
+        ["css=#btnGetAccount", "css:finder"],
+        ["xpath=//input[@id='btnGetAccount']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73b5bef6-ecb0-4187-b465-3b06b77b159f",
+      "comment": "",
+      "command": "click",
+      "target": "id=listAccounts",
+      "targets": [
+        ["id=listAccounts", "id"],
+        ["name=listAccounts", "name"],
+        ["css=#listAccounts", "css:finder"],
+        ["xpath=//select[@id='listAccounts']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'800003 Checking\n800002 Savings\n4539082039396288 Credit Card')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27f8eff8-2c28-4539-83c8-f6df7e050f51",
+      "comment": "",
+      "command": "select",
+      "target": "id=listAccounts",
+      "targets": [],
+      "value": "label=4539082039396288 Credit Card"
+    }, {
+      "id": "425d705a-8e62-4359-a31d-f54d7caf4aaa",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnGetAccount",
+      "targets": [
+        ["id=btnGetAccount", "id"],
+        ["css=#btnGetAccount", "css:finder"],
+        ["xpath=//input[@id='btnGetAccount']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "db018e46-4b9b-40ee-a9d1-a8f2dac14fba",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9c7c78d0-6afd-4f71-a356-60289162b1b8"]
+  }],
+  "urls": ["http://demo.testfire.net/"],
+  "plugins": []
+}

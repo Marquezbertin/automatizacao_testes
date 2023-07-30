@@ -1,4 +1,4 @@
-# Automação de Testes com Selenium IDE para o Site  IBM BANKING Line Online
+# Automação de Testes com Selenium IDE para o Site  IBM BANKING Line 
 Este repositório contém um conjunto de scripts para automação de testes utilizando o Selenium IDE para o site de testes de segurança do IBM BANKING Line Online. O Selenium IDE é uma ferramenta de código aberto que permite gravar e reproduzir interações com aplicativos web, facilitando a automação de testes.
 ## Pré-requisitos
 Certifique-se de ter as seguintes ferramentas instaladas antes de executar os scripts de automação:

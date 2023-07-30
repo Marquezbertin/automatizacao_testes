@@ -17,6 +17,9 @@ Certifique-se de ter as seguintes ferramentas instaladas antes de executar os sc
 ## Estrutura do Repositório
 * scripts/: Este diretório contém todos os scripts de automação criados com o Selenium IDE.
 * screenshots/: Diretório que armazena as capturas de tela realizadas durante a execução dos testes. As capturas de tela são úteis para documentar possíveis erros ou falhas encontradas durante a automação.
+## O backlog
+Um backlog é uma lista ordenada de tarefas, itens ou requisitos que precisam ser realizados em um projeto. Esses itens geralmente são descritos como histórias de usuário, tarefas, problemas ou bugs, e são priorizados com base em sua importância e urgência. O backlog é uma parte essencial das metodologias ágeis de desenvolvimento de software, como Scrum e Kanban.
+Para registrar os erros encontrados utilizaremos a plataforma "O backlog"  segue link:  https://brunobm.backlog.com/projects/IBMBANKINGLINE
 ## Contribuição
 Se você deseja contribuir para este projeto, fique à vontade para criar um fork e enviar um pull request com suas melhorias.
 ## Aviso Legal

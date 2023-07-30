@@ -20,6 +20,7 @@ Certifique-se de ter as seguintes ferramentas instaladas antes de executar os sc
 ## O backlog
 Um backlog é uma lista ordenada de tarefas, itens ou requisitos que precisam ser realizados em um projeto. Esses itens geralmente são descritos como histórias de usuário, tarefas, problemas ou bugs, e são priorizados com base em sua importância e urgência. O backlog é uma parte essencial das metodologias ágeis de desenvolvimento de software, como Scrum e Kanban.
 Para registrar os erros encontrados utilizaremos a plataforma "O backlog"  segue link:  https://brunobm.backlog.com/projects/IBMBANKINGLINE
+O registro no portal é gratuito. 
 ## Contribuição
 Se você deseja contribuir para este projeto, fique à vontade para criar um fork e enviar um pull request com suas melhorias.
 ## Aviso Legal

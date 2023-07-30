@@ -1,13 +1,11 @@
 # Frameworks, plataformas utilizadas na construção deste repositório 
 
 * Lista de sites que utilizarei,paa automatizar os testes funcionais: 
-  * Site de Turismo, simples, por isso é o ultimo da lista - <http://newtours.demoaut.com>
   * Site que simula alguns problemas de elementos duplicados - <https://ultimateqa.com/automation>
   * Site do Livro Elemental Selenium, eles tem esse site aonde mostra muitos exemplos, digamos que esse site tem todos os fundamentos básicos - <http://the-internet.herokuapp.com/>
-  * O Site abaixo simula um CMS, um site de controle de conteúdo, muitos sites de escola e micro-empresas são feitos com CMS, o mesmo tem vários problemas legais que você terá em qualquer emprego - <https://s1.demo.opensourcecms.com/s/44>
   * Site de Treinamento que simula uma empresa aérea, esse é outro site que muitas empresas fazem teste - <https://phptravels.com/demo/>
-  * Site de E-commerce, sites de compras pela internet - <http://automationpractice.com/index.php>
-  * Site de Treinamento da Sauce Labs, uma empresa especializada em Device Farm e Cross Browser na nuvem. - <https://www.saucedemo.com/>
+  * Site de E-commerce, sites de compras pela internet - <https://www.saucedemo.com/>
+  * Site de E-commerce, sites de compras pela internet - <https://shopmystore.com.br/>
   * Site da IBM para testes de Segurança que simula um BANKING Line Online - <http://demo.testfire.net/login.jsp>
   * Site de Treinamento Avançado, o considerado o mais difícil pela comunidade  - <http://demo.automationtesting.in/Register.html>
   

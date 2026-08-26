@@ -1,0 +1,52 @@
+name: Validar arquivos .side
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-side-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Instalar Python (caso necessário)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validar arquivos .side
+        run: |
+          python - <<'PYTHON'
+          import json
+          import glob
+          import sys
+          import os
+
+          repo_root = os.getcwd()
+          side_files = glob.glob(os.path.join(repo_root, "**", "*.side"), recursive=True)
+
+          if not side_files:
+              print("Nenhum arquivo .side encontrado.")
+              sys.exit(0)
+
+          errors = []
+          for path in side_files:
+              try:
+                  with open(path, "r", encoding="utf-8") as f:
+                      json.load(f)
+              except json.JSONDecodeError as e:
+                  errors.append(f"{path}: {e}")
+
+          if errors:
+              print("❌ Erros de validação encontrados:")
+              for e in errors:
+                  print(f"  - {e}")
+              sys.exit(1)
+          else:
+              print("✅ Todos os arquivos .side são válidos.")
+              sys.exit(0)
+          PYTHON

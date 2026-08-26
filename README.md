@@ -1,44 +1,87 @@
-# Automatização com Selenium IDE
+# Automação de Testes com Selenium IDE
 
-Este é um guia básico de como realizar a automatização de testes usando o Selenium IDE, uma ferramenta de automação de testes de interface do usuário que permite gravar, editar e reproduzir ações do navegador.
+![GitHub repo size](https://img.shields.io/github/repo-size/Marquezbertin/automatizacao_testes)
+![GitHub language](https://img.shields.io/github/languages/count/Marquezbertin/automatizacao_testes)
+![GitHub last commit](https://img.shields.io/github/last-commit/Marquezbertin/automatizacao_testes)
+![GitHub issues](https://img.shields.io/github/issues/Marquezbertin/automatizacao_testes)
+![GitHub forks](https://img.shields.io/github/forks/Marquezbertin/automatizacao_testes)
 
-## O que é o Selenium IDE?
-O Selenium IDE é uma extensão para navegadores web que permite a criação de testes automatizados de forma visual e interativa. Ele grava as ações do usuário enquanto navega pelo site e permite a execução repetida dessas ações em diferentes cenários de teste.
+## Sobre
 
-## Instalação do Selenium IDE
-* Abra o navegador (atualmente, o Selenium IDE é suportado nos navegadores Firefox e Chrome).
-* Acesse a loja de extensões do navegador (Firefox Add-ons ou Chrome Web Store).
-* Pesquise por "Selenium IDE".
-* Clique em "Adicionar ao [Navegador]" para instalar a extensão.
-* Gravando um teste
-* Abra o Selenium IDE clicando no ícone da extensão que aparecerá na barra de ferramentas do navegador.
-* Na janela do Selenium IDE, clique em "New Project" para criar um novo projeto de teste.
-* Clique em "Record a new test" para iniciar a gravação do teste.
-* Navegue para o site que deseja testar e realize as ações que deseja automatizar (por exemplo, preencher formulários, clicar em botões, etc.).
-## Editando o teste
-Após a gravação, você pode editar o teste para torná-lo mais robusto e ajustá-lo aos cenários de teste específicos.
+Este repositório contém exemplos de automação de testes de interface usando **Selenium IDE** (arquivos `.side`). Os scripts foram desenvolvidos para testar funcionalidades do site **Demo Fire** (banco simulado) e servem como base para aprender e praticar testes de automação.
 
-## Selecione o teste gravado na lista de testes do projeto.
-Clique no botão "Edit" para abrir o editor de testes.
-No editor, você pode inserir comandos adicionais, remover ações indesejadas, adicionar verificações e ajustar os tempos de espera, se necessário.
-Executando o teste
-Após gravar e editar o teste, é hora de executá-lo.
+## Estrutura
 
-## Certifique-se de que o navegador está aberto com o Selenium IDE ativado.
-Selecione o teste que deseja executar na lista de testes do projeto.
-Clique no botão "Play current test" para iniciar a execução do teste.
-Observe o navegador executando as ações gravadas e aguardando as respostas do site.
-Exportando o teste
-Após criar e testar seus casos de teste no Selenium IDE, você pode exportá-los para diferentes formatos.
+```
+automatizacao_testes/
+├── README.md            # Documentação do projeto
+├── config.json          # Configurações gerais
+├── ferramentas.md       # Ferramentas auxiliares
+├── banco_altoromutual/
+│   ├── README.MD        # Documentação do módulo bancário
+│   ├── scripts/         # Scripts de teste (.side - Selenium IDE)
+│   │   ├── IBM BANKING_LOGIN.side
+│   │   ├── aba_localizacao.side
+│   │   ├── detalhes_conta.side
+│   │   ├── email_informações_produtos.side
+│   │   ├── seguro_vida_error.side
+│   │   └── transferência_extrato.side
+│   └── screenshots/     # prints de tela dos testes executados
+└── .github/
+    └── workflows/
+        └── validate.yml # Validação de arquivos .side
+```
 
-## Selecione o teste que deseja exportar na lista de testes do projeto.
-Clique no botão "Export" e escolha o formato desejado, como HTML, Java, C#, entre outros.
-Salve o arquivo exportado em seu computador para uso posterior ou integração com outras ferramentas de automação.
-Considerações finais
-O Selenium IDE é uma ferramenta poderosa para automação de testes de interface do usuário, especialmente para testes rápidos e simples. No entanto, para projetos mais complexos e robustos, considere utilizar o Selenium WebDriver em conjunto com alguma linguagem de programação, como Python, Java ou JavaScript.
+## Scripts de Teste
 
-Lembre-se também de que a automação de testes deve ser acompanhada de boas práticas de teste e padrões de desenvolvimento, para garantir a eficácia e a manutenção do conjunto de testes automatizados.
+Cada script `.side` é um arquivo JSON que define os passos de um teste no Selenium IDE. Os scripts disponíveis:
 
-## Recursos adicionais
-Documentação do Selenium IDE: <https://www.selenium.dev/selenium-ide/docs/en/introduction/>
-Página oficial do Selenium: <https://www.selenium.dev/>
+| Script | Descrição |
+|--------|-----------|
+| `IBM BANKING_LOGIN.side` | Teste de login no sistema bancário |
+| `aba_localizacao.side` | Teste que alterna entre abas do navegador |
+| `detalhes_conta.side` | Teste de visualização de detalhes da conta |
+| `email_informações_produtos.side` | Teste de inscrição em e-mails de produtos |
+| `seguro_vida_error.side` | Teste de validação de erro ao incluir seguro de vida |
+| `transferência_extrato.side` | Teste de transferência e extrato bancário |
+
+## Como executar
+
+### 1. Instalar o Selenium IDE
+
+- **Firefox:** Acesse a [Firefox Add-ons](https://addons.mozilla.org/pt-BR/firefox/add/selenium-ide/) e clique em "Adicionar ao Firefox".
+- **Chrome:** Acesse a [Chrome Web Store](https://chrome.google.com/webstore/detail/selenium-ide) e clique em "Adicionar ao Chrome".
+
+### 2. Importar e executar
+
+1. Abra o Selenium IDE.
+2. Clique em **File > Open project...** e selecione a pasta `banco_altoromutual/scripts`.
+3. Selecione o teste desejado na lista.
+4. Clique em **Play current test** para executar.
+
+### 3. (Opcional) Executar via linha de comando
+
+```bash
+# Instalar o runner globalmente (npm)
+npm install -g selenium-ide-runner
+
+# Executar um teste específico
+selenium-ide-runner -c "chrome" banco_altoromutual/scripts/IBM\ BANKING_LOGIN.side
+```
+
+## Contribuindo
+
+1. **Fork** o repositório.
+2. Crie uma branch (`git checkout -b feature/novo-teste`).
+3. Adicione um novo arquivo `.side` na pasta `banco_altoromutual/scripts/`.
+4. Commit suas alterações (`git commit -m 'add: novo teste de automação'`).
+5. Push para a branch (`git push origin feature/novo-teste`).
+6. Abra um **Pull Request**.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Feito com 🤍 por Bruno Bertin Marquez – Analista de QA.

@@ -85,3 +85,13 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 ---
 
 Feito com 🤍 por Bruno Bertin Marquez – Analista de QA.
+
+---
+
+## Citação e DOI
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24163215.svg)](https://doi.org/10.5281/zenodo.24163215)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0005--3546--8302-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-3546-8302)
+
+- **Zenodo (DOI):** https://doi.org/10.5281/zenodo.24163215
+- **ORCID:** https://orcid.org/0009-0005-3546-8302

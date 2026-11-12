@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Se vocÃª usar este software, cite-o como abaixo."
+title: "automatizacao_testes"
+authors:
+  - family-names: Marquez
+    given-names: Bruno Bertin
+version: 1.0.0
+date-released: "2026-11-12"
+url: "https://github.com/Marquezbertin/automatizacao_testes"
+repository-code: "https://github.com/Marquezbertin/automatizacao_testes"
